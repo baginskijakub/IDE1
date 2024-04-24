@@ -13,7 +13,7 @@ export const SelectionPanel = () => {
         <div className={'w-1/3 bg-white p-4 rounded-md flex flex-col gap-5'}>
             <h3 className={'font-medium'}>Distribute medicine</h3>
             <SelectCPR value={selectedCPR} onChange={setSelectedCPR} />
-            {memoizedData && <SelectionRow name={memoizedData.name} quantity={memoizedData.quantity} />}
+            {memoizedData && <SelectionRow name={memoizedData.name} quantity={memoizedData.quantity} link={memoizedData.link} />}
         </div>
     )
 }
